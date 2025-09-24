@@ -89,7 +89,7 @@ if __name__ == '__main__':
     rhos_single_copy_531_summed = np.sum(rhos_single_copy_531 * wghts.reshape((1,10,1,1)), axis=1)
         
 
-    n_cpu = 2 #24
+    n_cpu = 24
     print("Start...")
     print("Dataset 024...")
     with ProcessPoolExecutor(n_cpu) as pool:
@@ -116,3 +116,7 @@ if __name__ == '__main__':
     print('fraction 024', fraction_024)
     print('fraction 531', fraction_531)
     print("Done.")
+
+# We obtained the following results:
+# fraction 024 0.97
+# fraction 531 1.0

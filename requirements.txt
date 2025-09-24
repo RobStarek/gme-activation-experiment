@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+torch
+picos
+tqdm
+departed (https://github.com/jan-provaznik/departed)
