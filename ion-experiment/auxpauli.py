@@ -1,3 +1,7 @@
+"""
+A collection of convinience functions for manipulating Pauli operators and their kronecker products.
+"""
+
 from functools import reduce
 import numpy as np
 import KetSugar as ks
