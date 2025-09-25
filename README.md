@@ -1,6 +1,6 @@
 # gme-activation-experiment
 
-Repository for data and scripts regarding the GME activation experiment on trapped ion platform.
+Repository for data and Python scripts regarding the GME activation experiment on trapped ion platform.
 
 * TODO: Arxiv number
 * TODO: Zenodo link
@@ -12,19 +12,17 @@ Repository for data and scripts regarding the GME activation experiment on trapp
 ### `ion-experiment/`
 Scripts, notebooks, and data for experimental analysis and state reconstruction.
 - **Notebooks:**  
-  - `witnessing-two-copy-gme.ipynb` — Main analysis of two-copy GME activation.
-  - `extrapolate-three-copies.ipynb` — Extrapolation to three-copy scenarios.
+  - `witnessing-two-copy-gme.ipynb` — Main analysis of two-copy GME activation experiment.
+  - `extrapolate-three-copies.ipynb` — Extrapolation to three-copy scenario.
   - `reconstruct.ipynb` — State reconstruction from tomograms.
   - `characterize-reconstruction.ipynb` — Calculate figures of merit of the single-copy states.
 - **Scripts:**  
-  - `bisep_checker.py`, `check_biseparability.py` — Biseparability checking tools.
+  - `bisep_checker.py`, `check_biseparability.py` — biseparability checking.
   - `MaxLik.py` — Maximum likelihood state estimation.
   - `auxpauli.py`, `KetSugar.py` — Pauli operator and quantum state utilities.
 - **Data:**  
   - `data/` — Experimental and processed data files (HDF5, NPY, NPZ), and intermediate results.
-  - `newtomo/` — Raw and processed tomogram files.
-  - `bisep-check/` — Monte Carlo biseparability checks and results.
-  - `old/` — Legacy scripts and data.
+  
 
 ### `witness-search/`
 Scripts and notebooks for witness operator search and construction.
@@ -43,7 +41,7 @@ Scripts and notebooks for witness operator search and construction.
 - **Witness Operators:**  
   - `two-copy-witness.h5`, `w9.npy`, `w9.npz`
 - **Reconstructed States:**  
-  - `reconstructed_three_qubit_states.h5`, `temp_single_copy_q050.npy`
+  - `reconstructed_three_qubit_states.h5`
 
 
 - **Structure of state tomograms:**
@@ -62,7 +60,7 @@ The data files can be conveniently inspected using [MyHDF5](https://myhdf5.hdfgr
 
 - Start with notebooks in `ion-experiment/` for data analysis and visualization.
 - Use scripts in `witness-search/` for witness construction and SDP optimization.
-- Refer to `data/` and `newtomo/` for input tomograms and results.
+- Refer to `data/`for input tomograms and results.
 
 ---
 
