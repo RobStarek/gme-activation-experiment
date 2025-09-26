@@ -4,8 +4,10 @@
 
 Repository for data and Python scripts regarding the GME activation experiment on trapped ion platform.
 
+
 * TODO: Arxiv number
 * TODO: Zenodo link
+* TODO: Delete the trendy Ghibli-AI-slop once the  repo goes public.
 
 ---
 
