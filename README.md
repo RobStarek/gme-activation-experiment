@@ -1,5 +1,7 @@
 # gme-activation-experiment
 
+![optional cover image](ghibli_cover.png)
+
 Repository for data and Python scripts regarding the GME activation experiment on trapped ion platform.
 
 * TODO: Arxiv number
