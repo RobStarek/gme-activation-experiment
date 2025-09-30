@@ -1,0 +1,82 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Experimental verification of multi-copy activation of
+  genuine multipartite entanglement in a trapped-ion
+  platform
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Robert
+    family-names: Stárek
+    email: starek@optics.upol.cz
+    orcid: 'https://orcid.org/0000-0002-5396-6293'
+    affiliation: >-
+      Palacký University Olomouc, Faculty of Science,
+      Department of Optics, 17. listopadu 1192/12 Olomouc
+      77900, Czechia
+  - given-names: Tim
+    family-names: Gollerthan
+    email: tim.gollerthan@uibk.ac.at
+    affiliation: >-
+      Universität Innsbruck, Institut für
+      Experimentalphysik, 6020 Innsbruck, Austria
+    orcid: 'https://orcid.org/0009-0005-5658-6017'
+  - given-names: Olga
+    family-names: Leskovjanová
+    email: olga.leskovjanova01@upol.cz
+    orcid: 'https://orcid.org/0000-0002-3638-3627'
+    affiliation: >-
+      Palacký University Olomouc, Faculty of Science,
+      Department of Optics, 17. listopadu 1192/12 Olomouc
+      77900, Czechia
+  - orcid: 'https://orcid.org/0000-0002-5446-3962'
+    given-names: Michael
+    family-names: Meth
+    email: Michael.Meth@uibk.ac.at
+    affiliation: >-
+      Universität Innsbruck, Institut für
+      Experimentalphysik, 6020 Innsbruck, Austria
+  - orcid: 'https://orcid.org/0009-0000-2123-666X'
+    given-names: Peter
+    family-names: Tirler
+    email: Peter.Tirler@uibk.ac.at
+    affiliation: >-
+      Universität Innsbruck, Institut für
+      Experimentalphysik, 6020 Innsbruck, Austria
+  - given-names: Nicolai
+    family-names: Friis
+    affiliation: >-
+      Technische Universität Wien, Atominstitut & Vienna
+      Center for Quantum Science and Technology (VCQ), 
+      Stadionallee 2, 1020 Vienna, Austria
+    orcid: 'https://orcid.org/0000-0003-1950-8640'
+    email: nicolai.friis@tuwien.ac.at
+  - email: martin.ringbauer@uibk.ac.at
+    orcid: 'https://orcid.org/0000-0001-5055-6240'
+    affiliation: >-
+      Universität Innsbruck, Institut für
+      Experimentalphysik, 6020 Innsbruck, Austria
+    given-names: Martin
+    family-names: Ringbauer
+  - given-names: Ladislav
+    family-names: Mišta
+    name-suffix: Jr.
+    email: mista@optics.upol.cz
+    affiliation: >-
+      Palacký University Olomouc, Faculty of Science,
+      Department of Optics, 17. listopadu 1192/12 Olomouc
+      77900, Czechia
+    orcid: 'https://orcid.org/0000-0002-1979-7617'
+repository-code: 'https://github.com/RobStarek/gme-activation-experiment/'
+abstract: >-
+  This repository contains data and code related to an
+  experiment conducted with six trapped ions that provides
+  unambiguous evidence of the predicted activation of GME
+  from two copies of biseparable but not partially separable
+  states. 
+license: MIT
