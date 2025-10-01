@@ -2,10 +2,9 @@
 
 ![optional cover image](ghibli_cover.png)
 
-Repository for data and Python scripts regarding the GME activation experiment on trapped ion platform.
+Repository for data and Python scripts regarding the GME activation experiment on the trapped ion platform.
 
-
-* TODO: Arxiv number
+* TODO: ArXiv number
 * TODO: Zenodo link
 * TODO: Delete the trendy Ghibli-AI-slop once the  repo goes public.
 
@@ -49,22 +48,18 @@ Scripts and notebooks for witness operator search and construction.
 
 
 - **Structure of state tomograms:**
-  - The H5 file contains two dataset: `ions_024` and `ions_531` for the first and the second copy, respectively.
-  - Each dataset has shape (10, 27, 8), wherein the first index selects the prepared constituent state (see `state_order` attribute), the second index selects the tomographic measurement (see `tomo_order` attribute), and the last index selects the measurement outcome (`000`, `001`, ..., `111`). The entries in the dataset are measured outcomes probabilities for each state and measurement. They were calculated as number of counts devided by number of shots and stored. We used 200 shots per configuration.
+  - The H5 file contains two datasets: `ions_024` and `ions_531` for the first and the second copy, respectively.
+  - Each dataset is a 17x64 table, where the first index selects the witness measurement in accordance with the `two_copy_table_meas` dataset of the `two-copy-witness.h5` file, and the second index determines the measurement outcome (`000000`, `000001`, ..., `111111`). The entries in the dataset are measured outcomes probabilities for each state and measurement. They were calculated as the number of counts divided by the number of shots and stored. We used 200 shots per configuration.
 
 - **Structure of witness tomogram:**
-  - The H5 file contains 100 named datasets, corrsponding to the combination of used constituent states, from `a1,a1` to `c2,c2`.
-  - Each dataset is table 17x64, where the first index selects the witness measurement in accordance to `two_copy_table_meas` dataset of the `two-copy-witness.h5` file, and the second index determines the measurement outcome (`000000`, `000001`, ..., `111111`).
+  - The H5 file contains 100 named datasets, corresponding to the combination of used constituent states, from `a1,a1` to `c2,c2`.
+  - These state keys are saved in the legacy nomenclature. In the paper they are labeled $|a_{i}\rangle$ with $w=1 \dots 8$, and $|\tilde{a}_{8,9}\rangle$. The map is as follows:
+    - $|a_{0 \dots 3}\rangle$ - `a1` ... `a4`,
+    - $|a_{4 \dots 7}\rangle$ - `b1` ... `b4`,
+    - $|\tilde{a}_{8,9}\rangle$ - `c1`, `c2`.
+  - Each dataset is a table of shape 17x64, where the first index selects the witness measurement in accordance with the `two_copy_table_meas` dataset of the `two-copy-witness.h5` file, and the second index determines the measurement outcome (`000000`, `000001`, ..., `111111`).
 
 The data files can be conveniently inspected using [MyHDF5](https://myhdf5.hdfgroup.org) tool.
-
----
-
-## Usage
-
-- Start with notebooks in `ion-experiment/` for data analysis and visualization.
-- Use scripts in `witness-search/` for witness construction and SDP optimization.
-- Refer to `data/`for input tomograms and results.
 
 ---
 
