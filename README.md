@@ -2,8 +2,8 @@
 
 Repository for data and Python scripts regarding the GME activation experiment on the trapped ion platform.
 
-Preprint on ArXiv: <TODO>
-Zenodo permalink: <TODO: Zenodo link>
+* Preprint on ArXiv: <TODO>
+* Zenodo permalink: <TODO: Zenodo link>
 
 ---
 
