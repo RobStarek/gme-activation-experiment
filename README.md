@@ -1,31 +1,31 @@
 # gme-activation-experiment
 
-![optional cover image](ghibli_cover.png)
-
 Repository for data and Python scripts regarding the GME activation experiment on the trapped ion platform.
 
-* TODO: ArXiv number
-* TODO: Zenodo link
-* TODO: Delete the trendy Ghibli-AI-slop once the  repo goes public.
+Preprint on ArXiv: <TODO>
+Zenodo permalink: <TODO: Zenodo link>
 
 ---
 
 ## Project Structure Overview
 
 ### `ion-experiment/`
-Scripts, notebooks, and data for experimental analysis and state reconstruction.
+Scripts, notebooks, and data for GME activation and quantum state reconstruction.
 - **Notebooks:**  
   - `witnessing-two-copy-gme.ipynb` — Main analysis of two-copy GME activation experiment.
   - `extrapolate-three-copies.ipynb` — Extrapolation to three-copy scenario.
-  - `reconstruct.ipynb` — State reconstruction from tomograms.
+  - `reconstruct.ipynb` — Quantum state reconstruction of the single copies from their tomograms.
   - `characterize-reconstruction.ipynb` — Calculate figures of merit of the single-copy states.
 - **Scripts:**  
   - `bisep_checker.py`, `check_biseparability.py` — biseparability checking.
   - `MaxLik.py` — Maximum likelihood state estimation.
-  - `auxpauli.py`, `KetSugar.py` — Pauli operator and quantum state utilities.
+  - `auxpauli.py`, `KetSugar.py` — Pauli operator and quantum-mechanics-related helper functions.
 - **Data:**  
   - `data/` — Experimental and processed data files (HDF5, NPY, NPZ), and intermediate results.
-  
+ 
+These script requires [`h5py`](https://www.h5py.org/) for H5 files manipulation, and a standard scientific python modules, namely `numpy`, `scipy` for algebra, and `matplotlib` for visualization. 
+For partial traces and transpositions we use a handly module [departed](https://github.com/jan-provaznik/departed).
+
 
 ### `witness-search/`
 Scripts and notebooks for witness operator search and construction.
@@ -33,6 +33,8 @@ Scripts and notebooks for witness operator search and construction.
 - `find-three-copy-witness.py` — Three-copy witness search.
 - `auxpauli.py`, `KetSugar.py` — Shared quantum mechanics utilities.
 - `two-copy-witness.h5` — Precomputed witness operator and measurement table.
+
+The SDP optimization relies on [Mosek](https://www.mosek.com/), which is interfaced to python using [Picos](https://picos-api.gitlab.io/picos/complex.html) project.
 
 ---
 
