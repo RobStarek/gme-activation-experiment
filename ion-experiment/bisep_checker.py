@@ -356,6 +356,8 @@ def check_bisep(
     for counter in range(maximum_rounds):
         
         _rhos = []
+        # Here we select only 8 states and exclude colored noise.
+        # Adding it does not help significantly in our data.
         for key in list(theo_rhos_3q.keys())[:-2]:
             pt = partitions.AC_B if 'b' in key else partitions.A_BC
             _rho_abi, fid = find_overlapping_state(rho*0.999 + 0.001*theo_rhos_3q[key], pt)
