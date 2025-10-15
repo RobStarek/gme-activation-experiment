@@ -1,9 +1,8 @@
-# gme-activation-experiment
+# Experimental verification of multi-copy activation of genuine multipartite entanglement - data and codes
 
 Repository for data and Python scripts regarding the GME activation experiment on the trapped ion platform.
 
 * Preprint on ArXiv: [arXiv:2510.12457](https://arxiv.org/abs/2510.12457)
-* Zenodo permalink: <TODO: Zenodo link>
 
 ---
 
