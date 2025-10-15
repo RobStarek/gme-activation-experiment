@@ -3,7 +3,8 @@
 
 cff-version: 1.2.0
 title: >-
-  Experimental verification of multi-copy activation of genuine multipartite entanglement - data and code
+  Experimental verification of multi-copy activation of
+  genuine multipartite entanglement - data and code
 message: >-
   If you use this dataset, please cite it using the metadata
   from this file.
@@ -70,6 +71,10 @@ authors:
       Department of Optics, 17. listopadu 1192/12 Olomouc
       77900, Czechia
     orcid: 'https://orcid.org/0000-0002-1979-7617'
+identifiers:
+  - type: doi
+    value: 10.48550/arXiv.2510.12457
+    description: ArXiv preprint.
 repository-code: 'https://github.com/RobStarek/gme-activation-experiment/'
 abstract: >-
   This repository contains data and code related to an
